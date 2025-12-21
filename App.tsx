@@ -1,28 +1,25 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import MrBertStackNav from './WiseMrBertRoutineGuide/SharpDailyGuidanceNavigation/MrBertStackNav';
+import MrBertLoader from './WiseMrBertRoutineGuide/SharpDailyGuidanceComponents/MrBertLoader';
+import { NavigationContainer } from '@react-navigation/native';
+import { useEffect, useState } from 'react';
+import { ContextProvider } from './WiseMrBertRoutineGuide/SharpDailyGuidanceStorage/mrBertContext';
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+const App = () => {
+  const [isVisibleStack, setIsVisibleStack] = useState(false);
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisibleStack(true);
+    }, 5000);
+  }, []);
 
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
-    </View>
+    <NavigationContainer>
+      <ContextProvider>
+        {isVisibleStack ? <MrBertStackNav /> : <MrBertLoader />}
+      </ContextProvider>
+    </NavigationContainer>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+};
 
 export default App;
