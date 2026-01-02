@@ -4,16 +4,16 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: WiseMrBertRoutineGuideAPIKey
+      app_store_connect: WiseMrBertRoutineGuideNewKey
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.wise.mr.bert.routine.guide
+        bundle_identifier: com.WiseMrBertRoutineGuideNew
       vars:
-        BUNDLE_ID: com.wise.mr.bert.routine.guide
+        BUNDLE_ID: com.WiseMrBertRoutineGuideNew
         XCODE_WORKSPACE: WiseMrBertRoutineGuide.xcworkspace
         XCODE_SCHEME: WiseMrBertRoutineGuide
-        APP_STORE_APPLE_ID: 6756845966
+        APP_STORE_APPLE_ID: 6757313762
     scripts:
       - name: Install npm dependencies
         script: |
@@ -44,4 +44,4 @@ workflows:
       app_store_connect:
         auth: integration
         submit_to_app_store: true
-        copyright: Wise MrBert Routine Guide 2025
+        copyright: Wise MrBert Routine Guide 2026

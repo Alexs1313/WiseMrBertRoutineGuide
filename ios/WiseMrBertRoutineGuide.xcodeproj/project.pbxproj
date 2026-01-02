@@ -305,7 +305,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wise.mr.bert.routine.guide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WiseMrBertRoutineGuideNew;
 				PRODUCT_NAME = WiseMrBertRoutineGuide;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -332,7 +332,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wise.mr.bert.routine.guide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.WiseMrBertRoutineGuideNew;
 				PRODUCT_NAME = WiseMrBertRoutineGuide;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
